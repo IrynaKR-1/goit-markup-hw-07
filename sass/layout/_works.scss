@@ -1,0 +1,133 @@
+.container-works {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 94px;
+}
+
+.img-works {
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 30px;
+  padding: 0;
+}
+.works-li {
+  position: relative;
+}
+.applications {
+  position: absolute;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  bottom: 0;
+}
+.applications-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--third-main-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.works,
+.team,
+.clients {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color-text);
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.section-team {
+  margin-left: auto;
+  margin-right: auto;
+  background: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-list {
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 30px;
+  padding: 0;
+}
+.benefits-li,
+.works-li,
+.our-team,
+.footer-li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.our-team {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.people {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-color-text);
+  padding: 0;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+}
+.social-href {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--third-main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 100ms;
+}
+.social-icon {
+  fill: var(--icon-main-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 100ms;
+}
+.social-href:hover {
+  background-color: var(--main-color);
+}
+.social-href:focus {
+  background-color: var(--main-color);
+}
+.social-href:hover .social-icon {
+  fill: var(--third-main-color);
+}
+.social-href:focus .social-icon {
+  fill: var(--third-main-color);
+}
