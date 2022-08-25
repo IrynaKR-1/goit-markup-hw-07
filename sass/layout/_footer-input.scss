@@ -10,11 +10,9 @@
   color: var(--third-main-color);
   text-transform: uppercase;
   margin-bottom: 20px;
-}
-
-.footer-input-label {
   width: 100%;
 }
+
 .footer-input-email {
   width: 358px;
   height: 50px;
@@ -29,19 +27,19 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    border-color: var(--main-color);
+  }
+  &:focus {
+    border-color: var(--main-color);
+  }
 }
 
-.footer-input-email:hover {
-  border-color: var(--main-color);
-}
-.footer-input-email:focus {
-  border-color: var(--main-color);
-}
 .footer-input-button {
   position: relative;
   width: 200px;
   height: 50px;
-  background: #2196f3;
+  background: var(--main-color);
   border-radius: 4px;
   margin-left: 12px;
   color: var(--third-main-color);
@@ -56,18 +54,19 @@
   padding-left: 28px;
   border: none;
   letter-spacing: 0.06em;
+  &:hover {
+    background: var(--main-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  &:focus {
+    background: var(--main-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
 }
-.footer-input-button:hover {
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
-}
-.footer-input-button:focus {
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
+
 .icon-send {
   position: absolute;
   right: 13px;

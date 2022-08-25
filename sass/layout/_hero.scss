@@ -32,6 +32,11 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 100ms;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    cursor: pointer;
+  }
 }
 .hero-bg {
   max-width: 1600px;
@@ -53,11 +58,4 @@
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
-}
-.hero-button:hover {
-  background-color: #188ce8;
-  cursor: pointer;
-}
-.hero-button:focus {
-  background-color: #188ce8;
 }

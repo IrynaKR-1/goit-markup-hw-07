@@ -49,9 +49,10 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 80ms;
-}
-.footer-contacts:hover {
-  color: var(--main-color);
+  &:hover,
+  &:focus {
+    color: var(--main-color);
+  }
 }
 
 .footer-main {
@@ -88,11 +89,11 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 100ms;
+  &:hover,
+  &:focus {
+    background-color: var(--main-color);
+  }
 }
 .footer-icon {
   fill: var(--third-main-color);
-}
-.footer-icon-href:hover,
-.footer-icon-href:focus {
-  background-color: var(--main-color);
 }

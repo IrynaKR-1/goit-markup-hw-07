@@ -19,17 +19,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 100ms;
+  &:hover,
+  &:focus {
+    border-color: var(--main-color);
+  }
 }
-.clients-href:hover,
-.clients-href:focus {
-  border-color: var(--main-color);
-}
-.clients-href:hover .clients-icon {
-  fill: var(--main-color);
-}
-.clients-href:focus .clients-icon {
-  fill: var(--main-color);
-}
+
 .clients-ul {
   display: flex;
   justify-content: center;
@@ -45,6 +40,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 100ms;
+  .clients-href:hover & {
+    fill: var(--main-color);
+  }
+  .clients-href:focus & {
+    fill: var(--main-color);
+  }
 }
 .skills {
   font-size: 16px;

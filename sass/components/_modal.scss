@@ -50,6 +50,10 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: var(--main-color);
+  }
 }
 .button-send {
   border: none;
@@ -68,13 +72,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
-.button-send:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.button-send:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+
 .user-name {
   font-family: "Roboto";
   font-style: normal;
@@ -96,18 +99,17 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: var(--main-color);
+  }
+  &::placeholder {
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
-.clients-coment::placeholder {
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.clients-coment:hover {
-  border-color: var(--main-color);
-}
-.clients-coment:focus {
-  border-color: var(--main-color);
-}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -120,6 +122,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   fill: #000000;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .button-close:hover & {
+    fill: var(--main-color);
+    cursor: pointer;
+  }
+  .button-close:focus & {
+    fill: var(--main-color);
+  }
 }
 .button-close {
   position: absolute;
@@ -136,13 +148,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-close:hover .icon-close {
-  fill: var(--main-color);
-  cursor: pointer;
-}
-.button-close:focus .icon-close {
-  fill: var(--main-color);
-}
+
 .checkbox {
   display: flex;
   gap: 7px;
@@ -158,6 +164,19 @@
   color: var(--second-main-color);
   align-items: center;
   justify-content: center;
+  span {
+    width: 16px;
+    height: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 2px solid #303030;
+    border-radius: 2px;
+    .checkbox-input:checked + & {
+      background-color: var(--main-color);
+      border-color: var(--main-color);
+    }
+  }
 }
 .contract {
   font-size: 14px;
@@ -165,15 +184,7 @@
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
-.checkbox-label span {
-  width: 16px;
-  height: 15px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  border: 2px solid #303030;
-  border-radius: 2px;
-}
+
 .icon-modal {
   position: absolute;
   fill: var(--main-color-text);
@@ -183,31 +194,21 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .div-input:hover & {
+    fill: var(--main-color);
+  }
+  .div-input:focus-within & {
+    fill: var(--main-color);
+  }
 }
 .icon-check {
   fill: transparent;
-}
-.checkbox-input:checked + .checkbox-label span {
-  background-color: var(--main-color);
-  border-color: var(--main-color);
-}
-.checkbox-input:checked + .checkbox-label .icon-check {
-  fill: var(--third-main-color);
+  .checkbox-input:checked + .checkbox-label & {
+    fill: var(--third-main-color);
+  }
 }
 .div-input {
   position: relative;
   margin-bottom: 10px;
   margin-top: 4px;
-}
-.modal-input:hover {
-  border-color: var(--main-color);
-}
-.modal-input:focus {
-  border-color: var(--main-color);
-}
-.div-input:hover .icon-modal {
-  fill: var(--main-color);
-}
-.div-input:focus-within .icon-modal {
-  fill: var(--main-color);
 }
