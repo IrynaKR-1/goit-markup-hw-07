@@ -1,4 +1,4 @@
-.portfolio-li {
+.portfolio__ul {
   padding: 0;
   flex-wrap: nowrap;
   display: flex;
@@ -6,12 +6,12 @@
   column-gap: 8px;
   margin-bottom: 50px;
 }
-.portfolio-section {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.button-portfolio {
+.portfolio__button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -39,7 +39,7 @@
     border-radius: 4px;
   }
 }
-.projects {
+.products__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -48,18 +48,20 @@
   letter-spacing: 0.06em;
   color: var(--main-color-text);
 }
-.products-ul {
+.portfolio__products {
+  margin-left: auto;
+  margin-right: auto;
+}
+.products {
   display: flex;
   flex-wrap: wrap;
   background-color: #ffffff;
   justify-items: center;
-  margin-left: auto;
-  margin-right: auto;
   gap: 30px;
   padding: 0;
 }
 
-.products-of-company {
+.products__card {
   width: 370px;
   list-style: none;
   line-height: 2;
@@ -79,11 +81,11 @@
   }
 }
 
-.products-up {
+.products__up {
   position: relative;
   overflow: hidden;
 }
-.products-up-text {
+.products__up_text {
   position: absolute;
   top: 0;
   left: 0;
@@ -104,25 +106,25 @@
   letter-spacing: 0.03em;
   color: var(--third-main-color);
   background: rgba(33, 150, 243, 0.9);
-  .products-of-company:hover & {
+  .products__card:hover & {
     transform: translateY(0%);
   }
 }
 
-.product-name {
+.products__name {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--second-main-color);
 }
-.projects-text {
+.products__text {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
 }
-.portfolio-items,
-.portfolio-li {
+.portfolio__items,
+.portfolio__ul {
   text-decoration: none;
   list-style: none;
 }

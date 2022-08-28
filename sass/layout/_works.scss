@@ -1,27 +1,29 @@
-.container-works {
+.works {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   padding-bottom: 94px;
 }
+.works--position {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-.img-works {
+.works__img {
   display: flex;
   flex-wrap: nowrap;
   column-gap: 30px;
   padding: 0;
 }
-.works-li {
+.works__li {
   position: relative;
 }
-.applications {
+.works__applications {
   position: absolute;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
   width: 100%;
   bottom: 0;
 }
-.applications-text {
+.works__description {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -37,9 +39,9 @@
   transform: translate(-50%, -50%);
 }
 
-.works,
-.team,
-.clients {
+.works__title,
+.team__title,
+.clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -50,28 +52,30 @@
   margin: 0;
   margin-bottom: 50px;
 }
-.section-team {
-  margin-left: auto;
-  margin-right: auto;
+.team {
   background: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.team-list {
+.team--position {
+  margin-left: auto;
+  margin-right: auto;
+}
+.team__ul {
   display: flex;
   flex-wrap: nowrap;
   column-gap: 30px;
   padding: 0;
 }
-.benefits-li,
-.works-li,
-.our-team,
-.footer-li {
+.benefits__width,
+.works__li,
+.team__li,
+.footer__li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.our-team {
+.team__li {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -80,7 +84,7 @@
   padding-bottom: 30px;
 }
 
-.people {
+.team__people {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -92,14 +96,23 @@
   margin-left: 0;
   margin-right: 0;
 }
-.social-links {
+.team__skills {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--second-main-color);
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.team__links {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 10px;
   padding: 0;
 }
-.social-href {
+.team__href {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -116,17 +129,17 @@
     background-color: var(--main-color);
   }
 }
-.social-icon {
+.team__icon {
   fill: var(--icon-main-color);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 100ms;
 
-  .social-href:hover & {
+  .team__href:hover & {
     fill: var(--third-main-color);
   }
-  .social-href:focus & {
+  .team__href:focus & {
     fill: var(--third-main-color);
   }
 }

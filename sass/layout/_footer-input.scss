@@ -1,7 +1,7 @@
-.footer-input {
+.mailing {
   margin-left: 93px;
 }
-.footer-input-label {
+.mailing__title {
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -13,7 +13,7 @@
   width: 100%;
 }
 
-.footer-input-email {
+.mailing__email {
   width: 358px;
   height: 50px;
   padding-top: 15px;
@@ -35,7 +35,7 @@
   }
 }
 
-.footer-input-button {
+.mailing__button {
   position: relative;
   width: 200px;
   height: 50px;
@@ -67,7 +67,7 @@
   }
 }
 
-.icon-send {
+.mailing__icon {
   position: absolute;
   right: 13px;
   top: 50%;

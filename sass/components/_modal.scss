@@ -22,7 +22,7 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
 }
-.modal-title {
+.modal__title {
   text-align: center;
   font-family: "Roboto";
   font-style: normal;
@@ -34,14 +34,14 @@
   color: var(--main-color-text);
   margin-bottom: 12px;
 }
-.modal-label {
+.modal__label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--second-main-color);
 }
 
-.modal-input {
+.modal__inform {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -55,7 +55,7 @@
     border-color: var(--main-color);
   }
 }
-.button-send {
+.modal__button_send {
   border: none;
   background: var(--main-color);
   border-radius: 4px;
@@ -87,7 +87,7 @@
   letter-spacing: 0.01em;
   color: var(--second-main-color);
 }
-.clients-coment {
+.modal__coment {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   margin-top: 4px;
@@ -116,7 +116,7 @@
   pointer-events: none;
 }
 
-.icon-close {
+.modal__icon_close {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -125,15 +125,15 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  .button-close:hover & {
+  .modal__button_close:hover & {
     fill: var(--main-color);
     cursor: pointer;
   }
-  .button-close:focus & {
+  .modal__button_close:focus & {
     fill: var(--main-color);
   }
 }
-.button-close {
+.modal__button_close {
   position: absolute;
   right: 8px;
   top: 8px;
@@ -149,13 +149,13 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox {
+.modal__checkbox {
   display: flex;
   gap: 7px;
   margin-top: 20px;
   justify-content: center;
 }
-.checkbox-label {
+.modal__checkbox_label {
   display: flex;
   gap: 7px;
   font-size: 14px;
@@ -172,20 +172,20 @@
     display: flex;
     border: 2px solid #303030;
     border-radius: 2px;
-    .checkbox-input:checked + & {
+    .modal__checkbox_input:checked + & {
       background-color: var(--main-color);
       border-color: var(--main-color);
     }
   }
 }
-.contract {
+.modal__contract {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
 
-.icon-modal {
+.modal__icon {
   position: absolute;
   fill: var(--main-color-text);
   top: 50%;
@@ -194,20 +194,20 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  .div-input:hover & {
+  .modal__input:hover & {
     fill: var(--main-color);
   }
-  .div-input:focus-within & {
+  .modal__input:focus-within & {
     fill: var(--main-color);
   }
 }
-.icon-check {
+.modal__icon_check {
   fill: transparent;
-  .checkbox-input:checked + .checkbox-label & {
+  .modal__checkbox_input:checked + .modal__checkbox_label & {
     fill: var(--third-main-color);
   }
 }
-.div-input {
+.modal__input {
   position: relative;
   margin-bottom: 10px;
   margin-top: 4px;

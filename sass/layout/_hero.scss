@@ -1,4 +1,4 @@
-.hero {
+.hero__title {
   display: block;
   font-weight: 900;
   font-size: 44px;
@@ -11,7 +11,7 @@
   margin: auto;
   width: 696px;
 }
-.hero-button {
+.hero__button {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -38,7 +38,7 @@
     cursor: pointer;
   }
 }
-.hero-bg {
+.hero--gradient {
   max-width: 1600px;
   height: 600px;
   background-image: linear-gradient(
@@ -53,7 +53,7 @@
   background-position: center;
   background-color: #c4c4c4;
 }
-.hero-section {
+.hero {
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
